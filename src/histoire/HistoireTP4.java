@@ -2,6 +2,8 @@ package histoire;
 
 import personnages.Commercant;
 import personnages.Humain;
+import personnages.Ronin;
+import personnages.Yakuza;
 
 public class HistoireTP4 {
 	public static void main(String[] args) {
@@ -17,5 +19,16 @@ public class HistoireTP4 {
 		marco.seFaireExtorquer();
 		marco.recevoir(15);
 		marco.boire();
+		System.out.println("PARTIE 2.2////////");
+		Yakuza yakuLeNoir= new Yakuza("Yaku Le Noir","Warsong", 30);
+		yakuLeNoir.direBonjour();
+		yakuLeNoir.extorquer(marco);	
+		System.out.println("PARTIE 2.3////////");
+		Ronin roro = new Ronin("Roro", 60);
+		roro.direBonjour();
+		roro.donner(marco);
+		System.out.println("PARTIE 3......////");
+		roro.parler("Je t'ai retrouvé vermine, tu vas payer pour ce que tu as fait à ce pauvre marchand!");
+		roro.provoquer(yakuLeNoir);
 	}
 }

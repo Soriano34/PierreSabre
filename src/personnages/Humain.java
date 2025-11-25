@@ -19,7 +19,7 @@ public class Humain {
 		return boissonFavorite;
 	}
 	public void direBonjour() {
-		parler("Bonjour ! je m'appelle "+ nom + "et j'aime boire du "+boissonFavorite);
+		parler("Bonjour ! je m'appelle "+ nom + " et j'aime boire du "+boissonFavorite);
 	}
 	public void parler(String texte) {
 		System.out.println("(" + nom + ") - " + texte);
