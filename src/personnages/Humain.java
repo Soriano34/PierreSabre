@@ -13,15 +13,15 @@ public class Humain {
 	}
 
 	private void memoriser(Humain humain) {
-		if (nbConnaissance<30) {
+		if (nbConnaissance<memoire.length) {
 			memoire[nbConnaissance]=humain;
 			nbConnaissance++;
 		}
 		else {
-			for (int i = 0; i < 29; i++) {
+			for (int i = 0; i < nbConnaissance-1; i++) {
 				memoire[i]=memoire[i+1];
 			}
-			memoire[29]=humain;
+			memoire[nbConnaissance-1]=humain;
 		}
 	}
 	private void repondre(Humain humain) {

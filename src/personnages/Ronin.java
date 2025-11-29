@@ -2,8 +2,8 @@ package personnages;
 
 public class Ronin extends Humain {
 	private int honneur=1;
-	public Ronin(String nom, int argent) {
-		super(nom,"shochu",argent);
+	public Ronin(String nom,String boissonFavorite, int argent) {
+		super(nom,boissonFavorite,argent);
 
 	}
 	public void donner(Commercant benificiaire) {
