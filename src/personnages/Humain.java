@@ -25,7 +25,7 @@ public class Humain {
 		}
 	}
 	private void repondre(Humain humain) {
-		humain.direBonjour();
+		direBonjour();
 		memoriser(humain);
 	}
 	public String getNom() {

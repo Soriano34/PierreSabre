@@ -19,6 +19,12 @@ public class Yakuza extends Humain {
 		parler("J'ai piqué les " + moneyDeVictime + " sous de " + victime.getNom() + ", ce qui me fait " + getArgent()
 				+ " dans ma poche. HIHIHAHAHAHHAHA");
 	}
+	@Override
+	public void direBonjour() {
+		// TODO Auto-generated method stub
+		super.direBonjour();
+		parler("Mon clan est celui de " + clan + ".");
+	}
 
 	public int getReputation() {
 		return reputation;
